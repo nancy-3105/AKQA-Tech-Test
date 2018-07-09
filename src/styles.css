@@ -1,0 +1,138 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+img,a
+{
+  border: 0;
+  outline: 0;
+}
+*
+{
+  box-sizing: border-box;
+}
+.clearFix
+{
+  clear: both;
+}
+.mainWrap {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+header {
+    background-color: #def1f4;
+}
+header h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    float: left;
+}
+header select {
+    float: right;
+    margin: 10px;
+    padding: 3px 20px 3px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.Product {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: -1px;
+    padding-top: 1px;
+}
+.pricingWrap {
+    padding: 50px 20px 0 20px;
+    overflow: auto;
+}
+.productName {
+    font-size: 17px;
+    font-weight: bold;
+    float: left;
+    display: block;
+    text-align: left;
+    max-width: 130px;
+    min-height: 40px;
+}
+.productPrice {
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    display: block;
+}
+.promoMessage {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    left: 0;
+}
+.promoMessage span
+{
+  display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+}
+.colorPromoRed
+{
+  background-color: #f00;
+}
+.colorPromoGreen
+{
+  background-color: #009900;
+}
+@media screen and (min-width: 480px){
+  .Product {
+    width: 50%;
+    float: left;
+    border-left: 1px solid #ccc;
+}
+.Product:nth-child(1),.Product:nth-child(2n+1){
+  border-left: 0;
+}
+}
+@media screen and (min-width: 760px){
+  .Product {
+    width: 33.33%;
+}
+.Product:nth-child(2n+1){
+  border-left: 1px solid #ccc;
+}
+.Product:nth-child(3n+1){
+  border-left:0;
+}
+}
+@media screen and (min-width: 1180px){
+  .Product {
+    width: 25%;
+}
+.productsWrap {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+.Product:nth-child(3n+1){
+  border-left:1px solid #ccc;
+}
+.Product:nth-child(4n+1){
+  border-left:0;
+}
+.promoMessage {
+    text-align: left;
+    padding-left: 10px;
+}
+.pricingWrap {
+    padding: 50px 10px 0 10px;
+    text-align: left;
+}
+.productName {
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 0;
+    margin-top: 5px;
+}
+.mainWrap {
+    margin: 20px auto;
+}
+}
